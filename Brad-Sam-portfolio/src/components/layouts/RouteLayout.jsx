@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Container } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
+import NavBar from '../NavBar';
 
 const RouteLayout = () => {
   return (
     <>
-    <p>This is the root</p>
+    <NavBar />
       <Box pb={8}>
         <main>
           <Outlet />
