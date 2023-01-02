@@ -6,11 +6,11 @@ import NavBar from '../NavBar';
 const RouteLayout = () => {
   return (
     <>
-    <NavBar />
-      <Box pb={8}>
-        <main>
-          <Outlet />
-        </main>
+      <Box as='main' pb={8}>
+        <NavBar />
+        <Container maxW="container.md" pt={14}>
+           <Outlet />
+        </Container>
       </Box>
     </>
   )
