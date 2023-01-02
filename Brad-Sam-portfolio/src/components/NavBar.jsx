@@ -1,5 +1,6 @@
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Stack } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -25,6 +26,29 @@ const NavBar = () => {
                     Samuel
                 </Heading>
             </Flex>
+
+            <Stack
+                direction={{ base: 'column', md: 'row' }}
+                display={{ base: 'none', md: 'flex' }}
+                width={{ base: 'full', md: 'auto' }}
+                alignItems="center"
+                flexGrow={1}
+                mt={{base: 4, md: 0}}
+                justifyContent="flex-end"
+            >
+                <Link
+                    to={'/projects'}
+                    p={2}
+                >
+                    Projects
+                </Link>
+                <Link
+                    to={'/contact'}
+                    p={2}
+                >
+                    Contact
+                </Link>
+            </Stack>
         </Container>
     </Box>
   )
