@@ -1,10 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
+import "@fontsource/montserrat/300.css";
+
 
 const styles = {
     global: {
         // styles for the `body`
         body: {
           bg: '#555859',
+          fontFamily: `'Montserrat', sans-serif`,
           color: 'white',
           height: 100,
           weight: 100

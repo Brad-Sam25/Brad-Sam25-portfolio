@@ -1,8 +1,9 @@
+import { Text } from '@chakra-ui/react'
 import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <Text>Contact</Text>
   )
 }
 
