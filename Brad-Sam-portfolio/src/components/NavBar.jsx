@@ -22,7 +22,7 @@ const NavBar = () => {
             justifyContent="flex-start"
         >
             <Flex align="center" mr={5}>
-                <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                <Heading as="h2" size="lg" letterSpacing={'tighter'}>
                     Samuel
                 </Heading>
             </Flex>

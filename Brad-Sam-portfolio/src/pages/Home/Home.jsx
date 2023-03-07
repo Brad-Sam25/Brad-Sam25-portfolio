@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, GridItem, Heading, Text, Box } from '@chakra-ui/react';
+import { Container, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
 
 const Home = () => {
 	return (
@@ -28,15 +28,13 @@ const Home = () => {
 					gridTemplateColumns={'350px 1fr'}
 					h="200px"
 					gap="1"
-					color="blackAlpha.700"
-					fontWeight="bold"
 				>
 					<GridItem pl="2" area={'title'}>
 						<Heading as="h2" pb="10px" size="xl">
 							About Me
 						</Heading>
 					</GridItem>
-					<GridItem pl="2" area={'content'}>
+					<GridItem pl="2" pt="30px" area={'content'}>
 						<Text pb="10px">
 							Prior to my career change into the tech sphere &#40;web and software development&#41;, I worked in law firm as a legal assistant with aspirations of eventually becoming a real estate or patent attorney. Our particular firm used a closing software named Qualia and after close contact and numerous requests for new features with their team, I found myself gravitating more towards the technological side of our process.
 						</Text>
@@ -49,7 +47,8 @@ const Home = () => {
 					</GridItem>
 				</Grid>
 			</Container>
-			<Container as='div' p="100px 0px">
+
+			<Container as='div' p="300px 0px">
 				<Heading as="h2" pb="10px" size="xl">
 					Hobbies
 				</Heading>
