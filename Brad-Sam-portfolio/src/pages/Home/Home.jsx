@@ -5,12 +5,14 @@ const Home = () => {
 	return (
 		<Container as="section" maxW="4xl">
 			<Container as='div' p="100px 0px">
-				<Text pb="10px" >Hi, my name is </Text>
-				<Heading as="h1" pb="10px" size="4xl">
+				<Text fontSize='xl'>Hi, my name is </Text>
+				<Heading as="h1" pb="10px" size="4xl" m='0px'>
 					Brad Samuel.
 				</Heading>
-				<Text pb="10px">I love making things on the web</Text>
-				<Text pb="10px">
+				<Heading as="h4" pb="10px" size="2xl" m='20px 0px 0px' color='#C0B9CC'>
+					I love making things on the web
+				</Heading>
+				<Text pb="10px" fontSize='xl' m='20px 0px 0px'>
 					As a professional web developer, I possess a passion for crafting
 					innovative and intuitive web experiences that effectively contribute to
 					the overall improvement of patient health outcomes while simultaneously
