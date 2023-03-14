@@ -10,6 +10,10 @@ const Projects = () => {
             Projects
           </Heading>
         </Container>
+
+        <Container as='div' p="100px 0px">
+          
+        </Container>
       </Container>
     </>
   )
