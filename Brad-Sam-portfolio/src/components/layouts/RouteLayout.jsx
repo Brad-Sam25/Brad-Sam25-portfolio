@@ -9,7 +9,7 @@ const RouteLayout = () => {
     <>
       <Box as='main' pb={8}>
         <NavBar />
-        <Container maxW="4xl" pt={10}>
+        <Container pt={10}>
            <Outlet />
            <Footer />
         </Container>

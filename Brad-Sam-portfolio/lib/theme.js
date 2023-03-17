@@ -9,8 +9,8 @@ const styles = {
           bg: '#555859',
           fontFamily: `'Montserrat', sans-serif`,
           color: 'white',
-          // height: 100,
-          // weight: 100
+          // height: '100vh',
+          // margin: 0
         },
         // styles for the `a`
         a: {
