@@ -8,7 +8,7 @@ const NavBar = () => {
         position="fixed"
         as="nav"
         width="100%"
-        backgroundColor="#C0B9CC"
+        backgroundColor="transparent"
         color="white"
         css={{ backdropFilter: 'blur(35px)' }}
         zIndex={2}

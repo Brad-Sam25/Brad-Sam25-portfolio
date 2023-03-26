@@ -6,11 +6,9 @@ const styles = {
     global: {
         // styles for the `body`
         body: {
-          bg: '#555859',
+          bg: '#202023',
           fontFamily: `'Montserrat', sans-serif`,
           color: 'white',
-          // height: '100vh',
-          // margin: 0
         },
         // styles for the `a`
         a: {
@@ -40,9 +38,9 @@ const styles = {
           '&::before': {
             content:'""',
             position:'absolute',
-            left: '10%',
+            left: '7%',
             bottom:'5px',
-            width: '450px',
+            width: '250px',
             height:'20px',
             transform:'skew(12deg) translateX(-20%)',
             background: 'rgba(103, 98, 166)',
