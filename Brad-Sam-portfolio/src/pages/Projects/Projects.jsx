@@ -1,6 +1,8 @@
 import { Center, Flex, Heading, Wrap, WrapItem } from '@chakra-ui/react';
 import React from 'react';
 import ProjectCard from '../../components/ProjectCard';
+import { motion as m } from 'framer-motion';
+import { cardContainerAnimation, cardItemAnimation } from '../../../lib/animation';
 
 const Projects = () => {
 	return (
@@ -8,8 +10,8 @@ const Projects = () => {
 			<Heading as="h1" size="2xl" mb="40px">
 				Projects
 			</Heading>
-			<Wrap spacing="25px" mb="40px">
-				<WrapItem>
+			<Wrap as={m.div} spacing="25px" mb="40px" variants={cardContainerAnimation} initial="hidden" animate="show" >
+				<WrapItem as={m.div} variants={cardItemAnimation}>
 					<Center>
 						<ProjectCard
 							title="Dewy"
@@ -17,7 +19,7 @@ const Projects = () => {
 						/>
 					</Center>
 				</WrapItem>
-				<WrapItem>
+				<WrapItem as={m.div} variants={cardItemAnimation}>
 					<Center>
 						<ProjectCard
 							title="Dewy"
@@ -25,7 +27,7 @@ const Projects = () => {
 						/>
 					</Center>
 				</WrapItem>
-				<WrapItem>
+				<WrapItem as={m.div} variants={cardItemAnimation} >
 					<Center>
 						<ProjectCard
 							title="Dewy"
