@@ -1,4 +1,5 @@
 import { Image, Text, Flex, DarkMode, Badge } from '@chakra-ui/react';
+import { motion as m } from 'framer-motion';
 import React from 'react';
 
 const ProjectCard = (props) => {
@@ -25,6 +26,8 @@ const ProjectCard = (props) => {
 					</Text>
 				</Flex>
 				<Image
+					as={m.img}
+					whileHover={{ scale: 1.1 }}
 					src={props.imageUrl}
 					alt={props.imageTitle}
 					maxW="100%"
