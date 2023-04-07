@@ -4,6 +4,16 @@ import "@fontsource/montserrat/300.css";
 
 const styles = {
     global: {
+      // styles for the scrollbar
+      '::-webkit-scrollbar': {
+        width: '5px',
+        height: '5px',
+        backgroundColor: '#202023',
+      },
+      '::-webkit-scrollbar-thumb': {
+        borderRadius: '10px',
+        backgroundColor: 'gray.400',
+      },
         // styles for the `body`
         body: {
           bg: '#202023',
@@ -46,7 +56,7 @@ const styles = {
             background: 'rgba(103, 98, 166)',
             zIndex: -1
           }
-        }        
+        }
       },
 }
 

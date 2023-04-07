@@ -30,33 +30,37 @@ const ProjectCard = (props) => {
 					whileHover={{ scale: 1.1 }}
 					src={props.imageUrl}
 					alt={props.imageTitle}
-					maxW="100%"
 					borderRadius="20px"
 					mb="10px"
+					w="180px"
+					h="140px"
 				/>
 				<Text
 					color="white"
 					fontWeight="600"
 					textAlign="start"
 					fontSize="md"
+					mb="10px"
 					w="100%"
 				>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
-					delectus!
+					{props.description}
 				</Text>
-				<Flex mt="auto" justify="space-between" w="100%" align="center">
+				<Flex mt="auto" w="100%" align="center" flexWrap="wrap">
 					<DarkMode>
-						<Badge
-							borderRadius="9px"
-							size="md"
-							color="#CA00F2"
-							textAlign="center"
-							display="flex"
-							justifyContent="center"
-							alignItems="center"
-						>
-							Javascript
-						</Badge>
+						{props.technologies.map((tech, index) => (
+							<Badge
+								key={index}
+								borderRadius="9px"
+								size="md"
+								color="#319795"
+								textAlign="center"
+								display="flex"
+								justifyContent="center"
+								alignItems="center"
+							>
+								{tech}
+							</Badge>
+						))}
 					</DarkMode>
 				</Flex>
 			</Flex>

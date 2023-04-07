@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
+import { Container, Grid, GridItem, Heading, Text, Image, Flex } from '@chakra-ui/react';
 import { customVariants } from '../../../lib/animation';
 import { motion as m } from 'framer-motion';
 
@@ -79,7 +79,16 @@ const Home = () => {
 							</Text>
 						</GridItem>
 						<GridItem pl="2" area={'image'}>
-							Image
+							<Image
+								src="../../images/Brad.jpg"
+								border="5px solid"
+								mx="auto"
+								borderColor="rgba(103, 98, 166)"
+								width="208px"
+								height="208px"
+								mt="-38px"
+								borderRadius="50%"
+							/>
 						</GridItem>
 					</Grid>
 				</m.div>
@@ -106,6 +115,24 @@ const Home = () => {
 						involved.
 					</Text>
 				</m.div>
+			</Container>
+
+			<Container>
+				<Heading mb="20px">My Experience</Heading>
+				<Grid templateColumns="auto 1fr" gap="40px">
+					<GridItem>February 2022 - Present</GridItem>
+					<GridItem>
+						<Text fontWeight={900}>Nemours</Text>
+						<Text fontWeight={600}>Web Application Developer</Text>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur exercitationem rem beatae illo quaerat vitae amet iure accusantium repudiandae sunt odio optio enim ipsum dolor suscipit dicta, sint dignissimos corporis!
+					</GridItem>
+					<GridItem>February 2022 - Present</GridItem>
+					<GridItem>
+						<Text fontWeight={900}>Nemours</Text>
+						<Text fontWeight={600}>Web Application Developer</Text>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur exercitationem rem beatae illo quaerat vitae amet iure accusantium repudiandae sunt odio optio enim ipsum dolor suscipit dicta, sint dignissimos corporis!
+					</GridItem>
+				</Grid>
 			</Container>
 		</Container>
 	);
