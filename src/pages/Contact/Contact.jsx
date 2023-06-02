@@ -17,11 +17,10 @@ const Contact = () => {
 			<Heading mb="30px" as="h1">
 				Contact Me
 			</Heading>
-			<Text>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat
-				doloribus eos sunt et voluptatem incidunt ut maiores quod? Accusantium
-				asperiores nam tempora voluptates similique sunt. Soluta porro magnam
-				ea?
+			<Text mb="30px">
+				I'm currently open to new job opportunities and would be delighted to
+				hear from you! Whether you have a specific question, a potential
+				collaboration, or simply want to say hello, don't hesitate to reach out!
 			</Text>
 			<Button
 				colorScheme="purple"

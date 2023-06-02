@@ -41,6 +41,7 @@ const Projects = () => {
 								imageTitle={project.imageTitle}
 								description={project.description}
 								technologies={project.technologies}
+								siteLink={project.siteLink}
 							/>
 						</Center>
 					</WrapItem>

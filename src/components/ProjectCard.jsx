@@ -1,4 +1,4 @@
-import { Image, Text, Flex, DarkMode, Badge } from '@chakra-ui/react';
+import { Image, Text, Flex, Badge } from '@chakra-ui/react';
 import { motion as m } from 'framer-motion';
 import React from 'react';
 
@@ -25,16 +25,18 @@ const ProjectCard = (props) => {
 						{props.title}
 					</Text>
 				</Flex>
-				<Image
-					as={m.img}
-					whileHover={{ scale: 1.1 }}
-					src={props.imageUrl}
-					alt={props.imageTitle}
-					borderRadius="20px"
-					mb="10px"
-					w="180px"
-					h="140px"
-				/>
+				<a target="_blank" href={props.siteLink}>
+					<Image
+						as={m.img}
+						whileHover={{ scale: 1.1 }}
+						src={props.imageUrl}
+						alt={props.imageTitle}
+						borderRadius="20px"
+						mb="10px"
+						w="180px"
+						h="140px"
+					/>
+				</a>
 				<Text
 					color="white"
 					fontWeight="600"
@@ -46,22 +48,22 @@ const ProjectCard = (props) => {
 					{props.description}
 				</Text>
 				<Flex mt="auto" w="100%" align="center" flexWrap="wrap">
-					<DarkMode>
 						{props.technologies.map((tech, index) => (
 							<Badge
 								key={index}
 								borderRadius="9px"
 								size="md"
-								color="#319795"
+								// color="#319795"
 								textAlign="center"
 								display="flex"
-								justifyContent="center"
+								justifyContent="space-between"
 								alignItems="center"
+								colorScheme='purple'
+								margin="0px 4px 5px 0px"
 							>
 								{tech}
 							</Badge>
 						))}
-					</DarkMode>
 				</Flex>
 			</Flex>
 		</>

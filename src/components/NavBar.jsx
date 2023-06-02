@@ -31,7 +31,6 @@ const NavBar = () => {
 
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
-					display={{ base: 'none', md: 'flex' }}
 					width={{ base: 'full', md: 'auto' }}
 					alignItems="center"
 					flexGrow={1}
@@ -41,16 +40,19 @@ const NavBar = () => {
 					<Link
 						to={'/projects'}
 						style={{
-							textDecoration: 'none',
 							padding: '0px 20px 0px 0px',
 							fontWeight: '900',
+							color: 'white'
 						}}
 					>
 						Projects
 					</Link>
 					<Link
 						to={'/contact'}
-						style={{ textDecoration: 'none', fontWeight: '900' }}
+						style={{
+							fontWeight: '900',
+							color: 'white',
+						}}
 					>
 						Contact
 					</Link>
