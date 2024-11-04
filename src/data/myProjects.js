@@ -8,12 +8,12 @@ const myProjects =[
         technologies: ["MongoDB", "Expressjs", "React", "NodeJs", "Material UI"]
     },
     {
-        title: "Watch Hub",
-        imageUrl: "../../images/watch-hub.jpg",
-        siteLink: "https://watchub-jbs.herokuapp.com/",
-        imageTitle: "Picture of Watch Hub App",
-        description: "WatchHub is a steamlined search engine that was developed for users to not only gather information on their favorite shows or movies, but also, to watch trailers.",
-        technologies: ["Node js", "Expressjs", "MySQL", "Sequelize ORM", "Bulma"]
+        title: "KazCutz",
+        imageUrl: "../../images/kazcutz.webp",
+        siteLink: "https://kazcutz.com/",
+        imageTitle: "Picture of KazCutz App",
+        description: "This an app made for a Philly based barber where users can book appointments for a haircut. It also has stripe integration ready to use when the barber starts production of the products.",
+        technologies: ["Next js", "Nestjs", "Postgresql", "Prisma", "TailwindCss"]
     }
 ];
 

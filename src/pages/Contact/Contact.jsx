@@ -11,13 +11,18 @@ const Contact = () => {
 			initial="hidden"
 			animate="visible"
 			alignItems="center"
+			justify="center"
 			flexDir="column"
-			m="50px 0px 40px 0px"
+			py={20}
+			px={4}
+			mx="auto"
+			maxW="3xl"
+			textAlign="center"
 		>
-			<Heading mb="30px" as="h1">
+			<Heading mb={6} as="h1" size="2xl" color="purple.500">
 				Contact Me
 			</Heading>
-			<Text mb="30px">
+			<Text mb={8} fontSize="lg" color="gray.300" maxW="lg">
 				I'm currently open to new job opportunities and would be delighted to
 				hear from you! Whether you have a specific question, a potential
 				collaboration, or simply want to say hello, don't hesitate to reach out!
@@ -30,8 +35,8 @@ const Contact = () => {
 				rel="noopener noreferrer"
 				href="mailto:bradsamuel97@gmail.com"
 				target="_blank"
-				mb="20px"
-				textDecorationStyle="none"
+				mb={4}
+				textDecoration="none"
 			>
 				Say Hello
 			</Button>
